@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import connectMongo, { Link } from "../../../api/lib/database";
 
-export async function GET(request, { params }) {
+export async function GET({ params }) {
     try {
         await connectMongo();
 
